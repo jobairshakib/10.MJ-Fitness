@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "STANDARD",
+        "price": "$99",
+        "description": "Free Hand, Gym Fitness, Running",
+        "img": "https://i.ibb.co/GHBwRXS/p1.png"
+    },
+    {
+        "id": 2,
+        "name": "PREMIUM",
+        "price": "$199",
+        "description": "Free Hand, Gym Fitness, Running, Yoga",
+        "img":"https://i.ibb.co/YXPF7jm/p2.png"
+    },
+    {
+        "id": 3,
+        "name": "PLATINUM",
+        "price": "$299",
+        "description": "Free Hand, Gym Fitness, Running,Yoga,Body Building",
+        "img":"https://i.ibb.co/KNyW59j/p3.png"
+    }
+]
