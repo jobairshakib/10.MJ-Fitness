@@ -6,11 +6,9 @@ import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
-import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
-import Services from './Pages/Home/Services/Services';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
-import Checkout from './Pages/Checkout/Checkout';
+import CheckoutForm from './Pages/CheckoutForm/CheckoutForm';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 
 function App() {
@@ -22,12 +20,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/service/:serviceId' element={
           <RequireAuth>
-            <ServiceDetail></ServiceDetail>
-          </RequireAuth>
-        }></Route>
-        <Route path='/checkout' element={
-          <RequireAuth>
-            <Checkout></Checkout>
+            <CheckoutForm></CheckoutForm>
           </RequireAuth>
         }></Route>
         <Route path='/about' element={<About></About>}></Route>

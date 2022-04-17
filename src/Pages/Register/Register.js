@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Register.css'
-import { Spinner } from 'react-bootstrap';
 import Social from '../Login/Social/Social';
 import Loading from '../Loading/Loading';
 const Register = () => {
@@ -36,8 +35,6 @@ const Register = () => {
 
     const handleRegister = (event) => {
         event.preventDefault();
-
-        const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 

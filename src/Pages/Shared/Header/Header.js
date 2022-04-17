@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { signOut } from 'firebase/auth';
@@ -15,7 +15,7 @@ const Header = () => {
         <header>
             <nav>
                 <div className='website-title'>
-                    <h3>MJ Fitness.</h3>
+                    <Link to='/' className='header-link'><h3>MJ Fitness.</h3></Link>
                 </div>
                 <div className='link-container'>
                     <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to='/'>HOME</NavLink>

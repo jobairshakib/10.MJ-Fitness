@@ -1,17 +1,18 @@
 import React from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import './ServiceDetail.css'
+import { useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './CheckoutForm.css'
 
-const ServiceDetail = () => {
+const CheckoutForm = () => {
     const { serviceId } = useParams();
-    const navigate = useNavigate();
     const handleCheckout=(event) => {
         event.preventDefault();
-        navigate('/checkout');
+        toast('Thank you for the booking.');
     }
     return (
         <div>
-            <h2 className='text-center text-danger mt-5 mb-3'>Please Fill Up The Form for Booking</h2>
+            <h2 className='text-center text-danger mt-5 mb-3'>Please Fill Up The Form for Booking service no: {serviceId}</h2>
             <div className='text-center checkout-form'>
 
                 <form onSubmit={handleCheckout}>
@@ -20,11 +21,11 @@ const ServiceDetail = () => {
                     <input type="text" name='address' placeholder='Address' required />
                     <input type="text" name='phone' placeholder='Phone' required />
                     <input type="submit" className='input-btn' value="Proceed Checkout" />
-
                 </form>
+                <ToastContainer></ToastContainer>
             </div>
         </div>
     );
 };
 
-export default ServiceDetail;
+export default CheckoutForm;
