@@ -6,10 +6,10 @@ const Service = ({ service }) => {
     return (
         <div className='service-container'>
             <img src={img} alt="" />
-            <h3>{name}</h3>
-            <h4>{price}/<small>month</small></h4>
+            <h4>{name}</h4>
+            <h5>{price}/<small>month</small></h5>
             <p>{description}</p>
-            <button className='btn btn-primary w-100'>Buy</button>
+            <button className='btn w-100'>Start Now</button>
         </div>
     );
 };

@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "name": "STANDARD",
-        "price": "$99",
-        "description": "Free Hand, Gym Fitness, Running",
+        "name": "COUPLES COACHING",
+        "price": "$192",
+        "description": "Couples Coaching is ideal if you work harder and feel more motivated training with your partner/friend and want to make huge savings on personal training costs. You'll work through the individualised nutrition program I create for you, and exercise alongside your partner to accomplish your health and fitness goals.",
         "img": "https://i.ibb.co/GHBwRXS/p1.png"
     },
     {
         "id": 2,
-        "name": "PREMIUM",
-        "price": "$199",
-        "description": "Free Hand, Gym Fitness, Running, Yoga",
-        "img":"https://i.ibb.co/YXPF7jm/p2.png"
+        "name": "INDIVIDUALISED ONLINE COACHING",
+        "price": "$280",
+        "description": "Online coaching is ideal if you prefer to train at home (or remotely), but still want all the benefits personal training has to offer such as one-to-one 'virtual' sessions, personalised and tailored nutrition and lifestyle coaching.",
+        "img": "https://i.ibb.co/YXPF7jm/p2.png"
     },
     {
         "id": 3,
-        "name": "PLATINUM",
+        "name": "ONE TO ONE COACHING",
         "price": "$299",
-        "description": "Free Hand, Gym Fitness, Running,Yoga,Body Building",
-        "img":"https://i.ibb.co/KNyW59j/p3.png"
+        "description": "One on one coaching is ideal for you if you need a more personal approach to your training, mindset and nutrition. You'll work with me personally at my private studio to assess your current situation and together, we'll discover fast, safe and effective ways to help you burn, stubborn fat, feel more energised and accomplish your goals.",
+        "img": "https://i.ibb.co/KNyW59j/p3.png"
     }
 ]

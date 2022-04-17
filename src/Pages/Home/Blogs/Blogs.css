@@ -1,0 +1,14 @@
+.blogs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.blogs-title {
+    color: #dc3545;
+}
+.blogs-card{
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 1rem;
+}
