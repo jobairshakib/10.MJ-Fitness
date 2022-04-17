@@ -4,13 +4,15 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Register.css'
 import { Spinner } from 'react-bootstrap';
+import Social from '../Login/Social/Social';
+import Loading from '../Loading/Loading';
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true});
     const navigate = useNavigate();
 
     const navigateLogin = () => {
@@ -24,7 +26,9 @@ const Register = () => {
         );
     }
     if (loading) {
-        return <Spinner animation="border" variant="danger" />;
+        return (
+            <Loading></Loading>
+        );
     }
     if (user) {
         navigate('/home');
@@ -52,6 +56,7 @@ const Register = () => {
 
             </form>
             <p>Already have an account? <Link to="/login" onClick={navigateLogin}>Please Login</Link></p>
+            <Social></Social>
         </div>
     );
 };

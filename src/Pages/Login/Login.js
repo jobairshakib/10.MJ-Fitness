@@ -3,6 +3,7 @@ import { Spinner } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import Social from './Social/Social';
 
 const Login = () => {
@@ -27,7 +28,9 @@ const Login = () => {
         );
     }
     if (loading) {
-        return <Spinner animation="border" variant="danger" />;
+        return (
+            <Loading></Loading>
+        );
     }
     if (user) {
         navigate(from, { replace: true });
