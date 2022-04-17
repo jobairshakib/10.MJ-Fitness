@@ -2,6 +2,7 @@
 
 ## Live site link:
 
+https://mj-fitness.web.app
 
 
 *It is a Gym Trainer Site where user can buy some package as their needs.
