@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import './Register.css'
+import { Spinner } from 'react-bootstrap';
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
@@ -23,7 +24,7 @@ const Register = () => {
         );
     }
     if (loading) {
-        return <p>Loading...</p>;
+        return <Spinner animation="border" variant="danger" />;
     }
     if (user) {
         navigate('/home');
