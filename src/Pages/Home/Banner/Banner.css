@@ -11,5 +11,7 @@
     color: white;
     align-items: center;
     justify-content: flex-end;
-
+}
+.banner-text h1{
+font-weight: 700;
 }
