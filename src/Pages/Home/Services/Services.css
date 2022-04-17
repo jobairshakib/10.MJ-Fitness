@@ -1,4 +1,6 @@
 .services-container {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
@@ -6,4 +8,21 @@
 .services-title{
     text-align: center;
     color: #dc3545;
+}
+
+/* resposnsive */
+@media only screen and (max-width:576px) {
+    .services-container {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .services-container {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
