@@ -1,0 +1,15 @@
+.social-btn{
+    width: 100%;
+    font-weight: 500;
+    border: 1px solid #dc3545;
+    background: none;
+    padding: .8rem;
+    border-radius: 5px;
+}
+.social-btn:hover{
+    background: #dc3545;
+    color: #ffff;
+}
+.social-btn img{
+    width: 24px;
+}
