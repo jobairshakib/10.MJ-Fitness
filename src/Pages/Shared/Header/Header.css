@@ -1,16 +1,18 @@
 nav{
     height: 60px;
     width: 100%;
+    padding:0 2rem ;
     font-weight: bold;
     background: #dc3545;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
 }
-
+.website-title h3{
+    font-weight: 800;
+    color: #ffff;
+}
 .link {
     text-decoration: none;
     margin-left: 15px;

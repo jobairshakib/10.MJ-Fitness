@@ -6,6 +6,9 @@ const Header = () => {
     return (
         <header>
             <nav>
+                <div className='website-title'>
+                    <h3>MJ Fitness.</h3>
+                </div>
                 <div className='link-container'>
                     <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to='/'>HOME</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to='/blogs'>BLOGS</NavLink>
