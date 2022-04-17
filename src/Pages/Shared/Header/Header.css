@@ -16,7 +16,7 @@ nav{
 .link {
     text-decoration: none;
     margin-left: 15px;
-    font-size: 1rem;
+    font-size: .8rem;
     color: #ffff;
     padding: 0.5rem;
     border-radius: 5px;
@@ -33,7 +33,7 @@ nav{
     border-radius: 5px;
     padding: 0.5rem;
     margin-left: 15px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: color ease-in-out 300ms;
     color: black;
 }
@@ -46,4 +46,15 @@ nav{
     border: 1px solid #ffff;
     border-radius: 5px;
     background-color: #dc3545;
+}
+
+
+/* Responsive
+ */
+
+@media only screen and (max-width:576px){
+     nav{
+        display: flex;
+        flex-direction: column;
+    }
 }
