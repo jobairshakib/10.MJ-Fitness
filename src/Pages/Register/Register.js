@@ -18,12 +18,12 @@ const Register = () => {
     const navigateLogin = () => {
         navigate('/login');
     }
+    let errorElement;
     if (error) {
-        return (
+        errorElement =
             <div>
-                <p>Error: {error.message}</p>
+                <p className='text-danger'>Error: {error.message}</p>
             </div>
-        );
     }
     if (loading) {
         return (
@@ -55,6 +55,7 @@ const Register = () => {
                 <input type="submit" className='input-btn' value="Register" />
 
             </form>
+            {errorElement}
             <p>Already have an account? <Link to="/login" className='btn-link' onClick={navigateLogin}>Please Login</Link></p>
             <Social></Social>
         </div>
