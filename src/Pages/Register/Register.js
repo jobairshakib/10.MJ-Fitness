@@ -55,7 +55,7 @@ const Register = () => {
                 <input type="submit" className='input-btn' value="Register" />
 
             </form>
-            <p>Already have an account? <Link to="/login" onClick={navigateLogin}>Please Login</Link></p>
+            <p>Already have an account? <Link to="/login" className='btn-link' onClick={navigateLogin}>Please Login</Link></p>
             <Social></Social>
         </div>
     );

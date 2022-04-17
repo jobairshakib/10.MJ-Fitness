@@ -17,8 +17,7 @@ const Social = () => {
         errorElement = 
             <div>
                 <p className='text-danger'>Error: {error.message}</p>
-            </div>
-        
+            </div>  
     }
     if (loading) {
         return <Spinner animation="border" variant="danger" />;
